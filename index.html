@@ -148,7 +148,6 @@
 									<a href="#" class="next">Next</a>-->
 								</div>
 							</footer>
-
 					</div>
 
 				<!-- Footer -->
@@ -156,12 +155,13 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
+						<!--<ul class="actions">
+							<li><a href="#" class="button icon solid solo fa-arrow-up scrolly" style="border-radius: 0px;">Continue</a></li>
+						</ul>-->
 						<ul class="icons alt">
 									<li><a href="https://github.com/esthetique966" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
-						<ul><li><br>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
+						<ul><li><br>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></ul>
 			</div>
 
 		<!-- Scripts -->
@@ -172,6 +172,32 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
+
+
+	<script>
+    $(function () {
+        //当滚动到距顶部100像素以下时，出现箭头图标，否则消失
+        $(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 100) {
+                    $("#back-to-top").fadeIn(1000);
+                }
+                else {
+                    $("#back-to-top").fadeOut(1000);
+                }
+            });
+ 
+            //点击图标回到页面顶部
+            $("#back-to-top").click(function () {
+                if ($('html').scrollTop()) {
+                    $('html').animate({ scrollTop: 0 }, 1000);
+                    return false;
+                }
+                $('body').animate({ scrollTop: 0 }, 1000);
+                return false;
+            });
+        });
+    });
+</script>
 </html>

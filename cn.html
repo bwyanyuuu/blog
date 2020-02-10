@@ -10,16 +10,160 @@
     <title>Computer Networking - Esthetique's Blog</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    
+    <link rel="stylesheet" href="https://assets.hackmd.io/build/emojify.js/dist/css/basic/emojify.min.css">
+    <link href="https://assets.hackmd.io/build/font-vendor.b86e2bf451b246b1a88e.css" rel="stylesheet">
+    <link href="https://assets.hackmd.io/build/common-vendor.b8ecfc406ac0b5f77a26.css" rel="stylesheet">
+    <link href="https://assets.hackmd.io/build/index-vendor.8a602875f0438be6661b.css" rel="stylesheet">
+    <link href="https://assets.hackmd.io/build/index.41f65c147f42ef2a6007.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css" />
     <!--<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/ionicons.min.css" />
-    <link rel="stylesheet" href="assets/octicons.min.css" />
-    <link rel="stylesheet" href="assets/prism.min.css" />
+    <link rel="stylesheet" href="assets/css/octicons.min.css" />
+    <link rel="stylesheet" href="assets/css/prism.min.css" />
     <link rel="stylesheet" href="assets/css/emojify.min.css" />-->
-    <link rel="stylesheet" href="assets/css/style.css" /><link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
+    <script charset="utf-8" src="https://assets.hackmd.io/build/MathJax/config/TeX-AMS_CHTML.js?v=2.7.5"></script>
+    <link rel="stylesheet" href="assets/css/latex.css" />
+    <script charset="utf-8" src="https://assets.hackmd.io/build/MathJax/extensions/Safe.js?v=2.7.5"></script>
+    <link rel="stylesheet" href="assets/css/latex2.css" />
+    <!--<style type="text/css">  @-webkit-keyframes rotate {
+    from  { -webkit-transform: rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes rotate {
+    from  { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
+    .dropbox-dropin-btn, .dropbox-dropin-btn:link, .dropbox-dropin-btn:hover {
+      display: inline-block;
+      height: 14px;
+      font-family: "Lucida Grande", "Segoe UI", "Tahoma", "Helvetica Neue", "Helvetica", sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      color: #636363;
+      text-decoration: none;
+      padding: 1px 7px 5px 3px;
+      border: 1px solid #ebebeb;
+      border-radius: 2px;
+      border-bottom-color: #d4d4d4;
+        background: #fcfcfc;
+  background: -moz-linear-gradient(top, #fcfcfc 0%, #f5f5f5 100%);
+  background: -webkit-linear-gradient(top, #fcfcfc 0%, #f5f5f5 100%);
+  background: linear-gradient(to bottom, #fcfcfc 0%, #f5f5f5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f5f5f5',GradientType=0);  
+    }
+
+    .dropbox-dropin-default:hover, .dropbox-dropin-error:hover {
+      border-color: #dedede;
+      border-bottom-color: #cacaca;
+        background: #fdfdfd;
+  background: -moz-linear-gradient(top, #fdfdfd 0%, #f5f5f5 100%);
+  background: -webkit-linear-gradient(top, #fdfdfd 0%, #f5f5f5 100%);
+  background: linear-gradient(to bottom, #fdfdfd 0%, #f5f5f5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#f5f5f5',GradientType=0);  
+    }
+
+    .dropbox-dropin-default:active, .dropbox-dropin-error:active {
+      border-color: #d1d1d1;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+    }
+
+    .dropbox-dropin-btn .dropin-btn-status {
+      display: inline-block;
+      width: 15px;
+      height: 14px;
+      vertical-align: bottom;
+      margin: 0 5px 0 2px;
+      background: transparent url('https://www.dropbox.com/static/images/widgets/dbx-saver-status.png') no-repeat;
+      position: relative;
+      top: 2px;
+    }
+
+    .dropbox-dropin-default .dropin-btn-status {
+      background-position: 0px 0px;
+    }
+
+    .dropbox-dropin-progress .dropin-btn-status {
+      width: 18px;
+      margin: 0 4px 0 0;
+      background: url('https://www.dropbox.com/static/images/widgets/dbx-progress.png') no-repeat center center;
+        -webkit-animation-name: rotate;
+        -webkit-animation-duration: 1.7s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+      animation-name: rotate;
+      animation-duration: 1.7s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    .dropbox-dropin-success .dropin-btn-status {
+      background-position: -15px 0px;
+    }
+
+    .dropbox-dropin-disabled {
+      background: #e0e0e0;
+      border: 1px #dadada solid;
+      border-bottom: 1px solid #ccc;
+      box-shadow: none;
+    }
+
+    .dropbox-dropin-disabled .dropin-btn-status {
+      background-position: -30px 0px;
+    }
+
+    .dropbox-dropin-error .dropin-btn-status {
+      background-position: -45px 0px;
+    }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.4) {
+      .dropbox-dropin-btn .dropin-btn-status {
+        background-image: url('https://www.dropbox.com/static/images/widgets/dbx-saver-status-2x.png');
+        background-size: 60px 14px;
+          -webkit-background-size: 60px 14px;
+      }
+
+      .dropbox-dropin-progress .dropin-btn-status {
+        background: url('https://www.dropbox.com/static/images/widgets/dbx-progress-2x.png') no-repeat center center;
+        background-size: 20px 20px;
+          -webkit-background-size: 20px 20px;
+      }
+  }
+
+    .dropbox-saver:hover, .dropbox-chooser:hover {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .dropbox-chooser, .dropbox-dropin-btn {
+      line-height: 11px !important;
+      text-decoration: none !important;
+      box-sizing: content-box !important;
+        -webkit-box-sizing: content-box !important;
+        -moz-box-sizing: content-box !important;
+    }
+    </style>
+    <style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style>
+<style> .picker-dialog-frame{width:100%;height:100%;border:0;overflow:hidden}.picker-dialog-bg{position:absolute;top:0;left:0;background-color:#fff;z-index:1000}.picker-dialog{position:absolute;top:0;left:0;background-color:#fff;border:1px solid #acacac;width:auto;padding:0;z-index:1001;overflow:auto;-moz-box-shadow:rgba(0,0,0,.2) 0 4px 16px;-webkit-box-shadow:rgba(0,0,0,.2) 0 4px 16px;box-shadow:rgba(0,0,0,.2) 0 4px 16px}.picker-dialog-content{font-size:0;padding:0}.picker-dialog-title,.picker-dialog-buttons{display:none}</style>
+-->
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style>
+    
+
+    
 
 </head>
 
@@ -56,9 +200,9 @@
 
                 <!-- Text stuff -->
                 <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true">
-                    <h1 id="CN--CCNA"><a class="anchor hidden-xs" href="#CN--CCNA" title="CN--CCNA"><span class="octicon octicon-link"></span></a>CN + CCNA</h1>
+                    <h1 id="CN--CCNA"><a class="anchor hidden-xs" href="#CN--CCNA" title="CN--CCNA"><span class="octicon octicon-link"></span></a>Directory</h1>
                     <p><span class="toc"><ul>
-<li><a href="#CN--CCNA" title="CN + CCNA">CN + CCNA</a><ul>
+<li><a href="#CN--CCNA" title="Directory">Directory</a><ul>
 <li><a href="#Introduction" title="Introduction">Introduction</a><ul>
 <li><a href="#“Nuts-and-Bolts”-View" title="“Nuts and Bolts” View">“Nuts and Bolts” View</a></li>
 <li><a href="#Network-Structure" title="Network Structure">Network Structure</a></li>
@@ -4200,7 +4344,7 @@
                         <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
                             <div class="toc">
                                 <ul class="nav">
-                                    <li class=""><a href="#CN--CCNA" title="CN + CCNA">CN + CCNA</a>
+                                    <li class=""><a href="#CN--CCNA" title="Directory">Directory</a>
                                         <ul class="nav">
                                             <li><a href="#Introduction" title="Introduction">Introduction</a>
                                                 <ul class="nav">
@@ -4274,7 +4418,7 @@
                 <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
                     <div class="toc">
                         <ul class="nav">
-                            <li class=""><a href="#CN--CCNA" title="CN + CCNA">CN + CCNA</a>
+                            <li class=""><a href="#CN--CCNA" title="Directory">Directory</a>
                                 <ul class="nav">
                                     <li><a href="#Introduction" title="Introduction">Introduction</a>
                                         <ul class="nav">
@@ -4512,6 +4656,7 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+
 
 </body>
 
