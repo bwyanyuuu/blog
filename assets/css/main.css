@@ -292,7 +292,7 @@ input, select, textarea {
 	}
 
 	a {
-		color: #212931;
+		color: #337ab7;//212931;
 		border-bottom-color: rgba(33, 41, 49, 0.5);
 	}
 
@@ -2853,7 +2853,13 @@ input, select, textarea {
 	}
 
 		ul li {
-			padding-left: 0.5rem;
+			padding-left: 0.2rem;
+		}
+		ul li ul{
+			list-style: circle;
+		}
+		ul li ul li ul{
+			list-style: square;
 		}
 
 		ul.divided {
@@ -3575,10 +3581,12 @@ input, select, textarea {
 			padding: 1rem 1.75rem;
 			/*text-transform: uppercase;*/
 			visibility: visible;
+			color: #ffffff;
 		}
 
 			#header .logo:hover {
-				border-color: #ffffff !important;
+				text-decoration: none;
+				border-color: #ffffff;
 				color: #ffffff !important;
 			}
 
@@ -3790,6 +3798,7 @@ input, select, textarea {
 
 			#main > .post header.major > .date {
 				margin-top: -2rem;
+				font-family: "Merriweather"
 			}
 
 			#main > .post header.major > h1, #main > .post header.major h2 {
@@ -3799,7 +3808,7 @@ input, select, textarea {
 			}
 
 			#main > .post.featured {
-				//text-align: center;
+				text-align: center;
 			}
 
 			@media screen and (max-width: 1280px) {

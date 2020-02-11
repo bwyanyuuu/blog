@@ -893,11 +893,12 @@
 	width: 25vw;
 	max-height: 70vh;
 	overflow: auto;
-	text-align: inherit
+	text-align: inherit;
+	font-family: "Helvetica"
 }
 
 .ui-toc-dropdown>.toc {
-	max-height: calc(70vh - 100px);
+	max-height: calc(65vh - 100px);
 	overflow: auto
 }
 
@@ -909,7 +910,8 @@
 .ui-toc-dropdown a {
 	overflow: hidden;
 	text-overflow: ellipsis;
-	white-space: pre
+	white-space: pre;
+    line-height: 1.42857143;
 }
 
 .ui-toc-dropdown .nav>li>a {
@@ -1094,7 +1096,7 @@ html .ui-toc-dropdown[lang=zh-cn] {
 	position: fixed;
 	top: 0;
 	max-width: 18vw;
-	max-height: 100vh;
+	max-height: 75vh;
 	overflow: auto
 }
 
@@ -1102,7 +1104,7 @@ html .ui-toc-dropdown[lang=zh-cn] {
 .expand-toggle,
 .go-to-bottom {
 	display: block;
-	padding: 4px 10px;
+	padding: 4px 18px;
 	margin-top: 10px;
 	margin-left: 10px;
 	font-size: 12px;

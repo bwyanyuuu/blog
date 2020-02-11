@@ -50,7 +50,7 @@
 								<header class="major">
 									<span class="date">April 25, 2017</span>
 									<h2><a href="cn.html">Computer Networking</a></h2>
-									<p>Asbsebsb</p>
+									<p>Notes from Computer Networking class</p>
 								</header>
 								<!--<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>-->
 								<ul class="actions special">
@@ -173,31 +173,4 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 	</body>
-
-
-	<script>
-    $(function () {
-        //当滚动到距顶部100像素以下时，出现箭头图标，否则消失
-        $(function () {
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > 100) {
-                    $("#back-to-top").fadeIn(1000);
-                }
-                else {
-                    $("#back-to-top").fadeOut(1000);
-                }
-            });
- 
-            //点击图标回到页面顶部
-            $("#back-to-top").click(function () {
-                if ($('html').scrollTop()) {
-                    $('html').animate({ scrollTop: 0 }, 1000);
-                    return false;
-                }
-                $('body').animate({ scrollTop: 0 }, 1000);
-                return false;
-            });
-        });
-    });
-</script>
 </html>
