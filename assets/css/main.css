@@ -3572,22 +3572,26 @@ input, select, textarea {
 			pointer-events: auto;
 			border-style: solid;
 			border-color: #ffffff;
-			border-width: 4px !important;
-			font-family: "Holimount";/* Helvetica, sans-serif;*/
-			font-size: 6rem;
-			font-weight: 100;
+			border-width: 4px !important;/*
+			font-family: "Harmony"; Holimount"Helvetica, sans-serif;
+			font-size: 7rem;
+			font-weight: 500;
 			letter-spacing: 0em;
 			line-height: 1;
 			padding: 1rem 1.75rem;
-			/*text-transform: uppercase;*/
 			visibility: visible;
-			color: #ffffff;
+			color: #ffffff;*/
 		}
 
 			#header .logo:hover {
 				text-decoration: none;
 				border-color: #ffffff;
 				color: #ffffff !important;
+			}
+			#header .logo img {
+				max-height: 140px;
+				width: auto;
+				vertical-align: middle;
 			}
 
 		@media screen and (max-width: 980px) {
