@@ -2916,6 +2916,9 @@ input, select, textarea {
 	header {
 		cursor: default;
 	}
+	article > p{
+		text-align: center;
+	}
 
 		header > .date {
 			display: block;
